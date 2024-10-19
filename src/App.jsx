@@ -12,19 +12,19 @@ function App() {
     + API_KEY)
       const json = await response.json()
       console.log(json)
-      // setList(json);
+      setList(json);
     }
     fetchAllCoinData().catch(console.error);
   }, [])
   return (
     <>
       <div className="whole-page">
-        <h1>My Crytp List</h1>
+        <h1>My Crypto List</h1>
         <ul>
-            {list && Object.entries(list.Data).map(([coin]) => {
-              list.Data[coin].PlatformType == "blockchain" ?
-              (<li key={list.Data[coin].FullName}>{list.Data.FullName}</li>) : null; 
-            })}
+            {list && Object.entries(list.Data).map(([coin]) =>
+              list.Data[coin].PlatformType === "blockchain" ?
+              (<li key={list.Data[coin].FullName}>{list.Data[coin].FullName}</li>) : null
+            )}
         </ul>
       </div>
     </>
