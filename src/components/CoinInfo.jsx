@@ -27,3 +27,5 @@ const CoinInfo = ({image, name, symbol}) => {
   )
 
 }
+
+export default CoinInfo;
