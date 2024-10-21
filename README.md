@@ -1,8 +1,28 @@
-# React + Vite
+# Crypto Hustle
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Web 102 - Lab 5**
 
-Currently, two official plugins are available:
+Crypto Hustle is a React application built with Vite that displays a list of cryptocurrencies and their information. Users can search for specific cryptocurrencies and view detailed information about each one, including the name, symbol, and current price.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
+
+- Fetches and displays a list of cryptocurrencies from the CryptoCompare API.
+- Allows users to search for specific cryptocurrencies.
+- Displays detailed information about each cryptocurrency.
+
+## Installation
+
+1. Clone the repository and navigate to the project directory.
+2. Install the dependencies using `npm install`.
+3. Create a `.env` file in the root directory and add your CryptoCompare API key.
+4. Start the development server using `npm run dev`.
+
+## Usage
+
+- Open your browser and navigate to `http://localhost:3000`.
+- Use the search bar to filter the list of cryptocurrencies.
+- View detailed information about each cryptocurrency.
+
+## License
+
+This project is licensed under the MIT License.
